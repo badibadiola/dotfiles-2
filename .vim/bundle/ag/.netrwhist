@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/hornet/Documents/Notes'
-let g:netrw_dirhist_2='/Users/hornet'
-let g:netrw_dirhist_3='/Users/hornet/projects/ios_philips_hue_pos/..bfg-report/2016-11-22/10-59-05/protected-dirt'
-let g:netrw_dirhist_4='/Users/hornet/projects/soaring_book_cloud/config/environments'
-let g:netrw_dirhist_5='/Users/hornet/projects/soaring_book_cloud/app/views/pilots/forms'
-let g:netrw_dirhist_6='/Users/hornet/projects/trackkit'

@@ -1,5 +1,8 @@
-" Common
-:let mapleader = ";"
+"return" 2>&- || "exit"
+
+set nocompatible
+
+let mapleader=";"
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -21,7 +24,6 @@ set wildmenu
 set wildmode=longest,list,full
 set hidden
 
-" Correctly define E
 command! E Explor
 
 " Font
