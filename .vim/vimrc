@@ -1,15 +1,21 @@
 "return" 2>&- || "exit"
 
+" Improved Vim required.
 set nocompatible
 
+" Set the leader.
 let mapleader=";"
+
+" Editor configuration
+set backspace=2 " Make backspace delete in insert mode.
+set noswapfile " Don't use a swap file.
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set cursorline
 set expandtab
 set smartindent
 set autoindent
-
 set ruler
 set number
 set directory-=.
@@ -23,10 +29,13 @@ set smartcase
 set wildmenu
 set wildmode=longest,list,full
 set hidden
+set textwidth=80
+set colorcolumn=+1
 
+" Fix the :E command.
 command! E Explor
 
-" Font
+" Styling
 filetype indent on
 set guifont=Menlo:h14
 
@@ -46,6 +55,9 @@ au BufNewFile,BufRead Guardfile set filetype=ruby
 au BufNewFile,BufRead Fastfile set filetype=ruby
 au BufNewFile,BufRead Podfile set filetype=ruby
 
+" Coding configuration.
+set showmatch " Show matchin brackets or parantheses.
+set wildmenu  " Show the autocompletion menu on tab.
 
 " Ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
