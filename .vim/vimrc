@@ -5,6 +5,9 @@ set nocompatible
 
 map <C-n> :NERDTreeToggle<CR>
 
+" Make sure the clipboard works with iTerm.
+set clipboard+=unnamed
+
 " Set the leader.
 let mapleader=";"
 
@@ -92,3 +95,5 @@ noremap <silent> ;c :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR
 noremap <silent> ;u :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
 execute pathogen#infect()
+
+se mouse+=a
