@@ -48,3 +48,5 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
 ### rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
