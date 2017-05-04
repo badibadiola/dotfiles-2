@@ -3,6 +3,8 @@
 " Improved Vim required.
 set nocompatible
 
+map <C-n> :NERDTreeToggle<CR>
+
 " Set the leader.
 let mapleader=";"
 
