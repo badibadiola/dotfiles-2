@@ -1,7 +1,3 @@
-#############
-### ZSHRC ###
-#############
-
 # Set the correct encoding settings.
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -19,6 +15,9 @@ ZSH_THEME="agnoster"
 plugins=(git git-flow rails ruby)
 
 source $ZSH/oh-my-zsh.sh
+
+### Setup ZSK syntax highlighting.
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ###############
 ### ALIASES ###
@@ -42,11 +41,9 @@ alias gs='git shortlog -s -n --all'
 ### User
 export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin"
 
-### Postgresapp
+### Postgres.app
 export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
 
 ### rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
