@@ -3,7 +3,9 @@
 " Improved Vim required.
 set nocompatible
 
+" Setup NERDTree.
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
 
 " Make sure the clipboard works with iTerm.
 set clipboard+=unnamed
