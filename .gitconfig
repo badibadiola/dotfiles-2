@@ -1,0 +1,14 @@
+[user]
+	name = Jelle Vandebeeck
+	email = jelle@fousa.be
+[init]
+  templatedir = ~/.git_template
+[http]
+	postBuffer = 157286400
+[rerere]
+	enabled = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

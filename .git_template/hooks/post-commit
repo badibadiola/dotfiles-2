@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ ! -d "$GIT_DIR/rebase-merge" ]; then
+  export LANG="en_US.UTF-8"
+  export PATH="/usr/local/bin:$PATH"
+  export PATH="~/.rbenv/shims:$PATH"
+  export LOLCOMMITS_DIR=/Users/fousa/Dropbox/Lolcommits
+  
+  lolcommits --capture --animate=4 --delay=5 --device='FaceTime HD Camera' >/dev/null 2>&1 &
+fi
